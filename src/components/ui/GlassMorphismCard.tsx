@@ -39,7 +39,7 @@ const GlassMorphismCard = ({ text, width, height, fontSize, styles }: props) => 
   return (
     <GlassCard sx={{ width: width, height: height, ...styles  }}>
       <CardContent>
-        <Typography sx={{ fontSize: fontSize, textAlign: "center" }}>{text}</Typography>
+        <Typography sx={{ fontSize: fontSize, textAlign: "center", fontWeight: '600', letterSpacing: '0.8px' }}>{text}</Typography>
       </CardContent>
       <div>
         {/* <Button aria-label="up" style={{ color: "#fff" }}>

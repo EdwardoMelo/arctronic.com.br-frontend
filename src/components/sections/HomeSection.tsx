@@ -60,8 +60,9 @@ const HomeSection: React.FC = () => {
               variant="h1"
               sx={{
                 fontSize: { xs: "3rem", sm: "4rem", md: "8rem" },
+                fontWeight: "bold",
+                letterSpacing: "4px",
               }}
-              fontWeight="semibold"
               color="white"
               gutterBottom
             >
@@ -71,7 +72,7 @@ const HomeSection: React.FC = () => {
               sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2rem" } }}
               color="white"
             >
-              Um novo conceito de eletrônica para o seu mundo
+              Soluções em Tecnologia Eletrônica
             </Typography>
           </motion.div>
 

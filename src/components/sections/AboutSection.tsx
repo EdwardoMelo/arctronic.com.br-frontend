@@ -131,7 +131,7 @@ const AboutSection: React.FC = () => (
                 jusitifyContent: "center",
               }}
             >
-              <Typography fontSize="1rem" color="white">
+              <Typography fontSize="1.2rem" color="white">
                 Fundada em 2003, a ArcTronic é especializada no desenvolvimento
                 de projetos eletrônicos microcontrolados, atuando de forma
                 integrada em hardware e software. Também oferece serviços de
@@ -174,7 +174,7 @@ const AboutSection: React.FC = () => (
                 }}
               />
               <Typography
-                fontSize="1rem"
+                fontSize="1.4rem"
                 color="white"
                 textAlign="left"
                 fontWeight="semibold"
@@ -199,7 +199,7 @@ const AboutSection: React.FC = () => (
                     sx={{ display: "flex", alignItems: "center", gap: 1 }}
                   >
                     <CircleIcon sx={{ fontSize: "0.5rem", color: "white" }} />
-                    <Typography variant="body2" color="white" textAlign="left">
+                    <Typography variant="body2" fontSize='1rem' color="white" textAlign="left">
                       {item}
                     </Typography>
                   </Box>

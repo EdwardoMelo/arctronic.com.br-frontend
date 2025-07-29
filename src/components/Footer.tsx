@@ -3,14 +3,14 @@ import { Box, Container, Typography, Grid, Link } from "@mui/material";
 import { address, contactNumber, email } from "../utils";
 import { navigationItems } from "./Navbar";
 import logo from "../assets/logo.png"
-
+import blackLogo from '../assets/black-logo.png'
 const Footer: React.FC = () => {
   return (
     <Box
       component="footer"
       sx={{
         py: 4,
-        backgroundColor: "#181818",
+        backgroundColor: "white",
         color: "#fff",
         borderTop: "1px solid rgba(255, 255, 255, 0.1)",
       }}
@@ -31,7 +31,17 @@ const Footer: React.FC = () => {
               alignItems: "center",
             }}
           >
-            <img src={logo} alt="Logo" style={{ maxWidth: "200px" }} />
+            <Box
+              sx={{
+                backgroundColor: "white",
+                borderRadius: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img src={blackLogo} alt="Logo" style={{ maxWidth: "200px" }} />
+            </Box>
             <Typography
               variant="h6"
               component="div"
@@ -49,7 +59,7 @@ const Footer: React.FC = () => {
             <Typography
               variant="h6"
               gutterBottom
-              sx={{ color: "#ff6200", fontWeight: "bold" }}
+              sx={{ color: "black", fontWeight: "bold" }}
             >
               Navegação
             </Typography>
@@ -59,7 +69,7 @@ const Footer: React.FC = () => {
                 href={item.path}
                 color="inherit"
                 underline="hover"
-                sx={{ display: "block", my: 1, opacity: 0.9 }}
+                sx={{ display: "block", my: 1, opacity: 0.9, color: "#1a1a1a", fontWeight: '600' }}
               >
                 {item.label}
               </Link>
@@ -71,17 +81,17 @@ const Footer: React.FC = () => {
             <Typography
               variant="h6"
               gutterBottom
-              sx={{ color: "#ff6200", fontWeight: "bold" }}
+              sx={{ color: "black", fontWeight: "bold" }}
             >
               Contato
             </Typography>
-            <Typography variant="body2" sx={{ my: 1, opacity: 0.7 }}>
+            <Typography variant="body2" sx={{ my: 1, color: "#1a1a1a" }}>
               <strong>Telefone:</strong> {contactNumber}
             </Typography>
-            <Typography variant="body2" sx={{ my: 1, opacity: 0.7 }}>
+            <Typography variant="body2" sx={{ my: 1, color: "#1a1a1a" }}>
               <strong>Email:</strong> {email}
             </Typography>
-            <Typography variant="body2" sx={{ my: 1, opacity: 0.7 }}>
+            <Typography variant="body2" sx={{ my: 1, color: "#1a1a1a" }}>
               <strong>Endereço:</strong> {address}
             </Typography>
           </Grid>
@@ -96,7 +106,7 @@ const Footer: React.FC = () => {
             pt: 2,
           }}
         >
-          <Typography variant="body2" sx={{ opacity: 0.6 }}>
+          <Typography variant="body2" sx={{ opacity: 0.6, color: "#1a1a1a" }}>
             © {new Date().getFullYear()} ARCTRONIC. Todos os direitos
             reservados.
           </Typography>

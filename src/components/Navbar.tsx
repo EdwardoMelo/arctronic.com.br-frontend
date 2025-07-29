@@ -17,7 +17,8 @@ import {
 } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { Link, useLocation } from 'react-router-dom';
-import logo from "../assets/logo.png";
+import logo from "../assets/black-logo.png";
+import { primaryBackground, primaryOrange } from '../utils';
 
 export const navigationItems = [
   { label: 'Home', path: '/' },
@@ -38,7 +39,7 @@ const Navbar: React.FC = () => {
   };
 
   const drawer = (
-    <Box sx={{ width: 250, backgroundColor: '#181818', height: '100%' }} role="presentation" >
+    <Box sx={{ width: 250, backgroundColor: 'white', height: '100%' }} role="presentation" >
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
         <img src={logo} alt="Logo" style={{ maxWidth: '200px' }} />
       </Box>
@@ -51,7 +52,7 @@ const Navbar: React.FC = () => {
               onClick={handleDrawerToggle}
               selected={location.pathname === item.path}
             >
-              <ListItemText sx={{letterSpacing: '1px', color: 'white'}} primary={item.label} />
+              <ListItemText sx={{letterSpacing: '1px', color: 'black', fontWeight: '600'}} primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -66,12 +67,11 @@ const Navbar: React.FC = () => {
         color="default"
         sx={{
           // backgroundColor: "#1a1a1a",
-          background: "#181818",
+          background: "white",
           backdropFilter: "blur(2px)",
           borderRadius: "0px",
           position: "sticky",
           display: "flex",
-
           top: 0,
           zIndex: 100,
         }}
@@ -79,7 +79,6 @@ const Navbar: React.FC = () => {
       >
         <Toolbar
           sx={{
-            border: "1px solid #181818",
             display: "flex",
             justifyContent: "space-between",
           }}
@@ -115,7 +114,7 @@ const Navbar: React.FC = () => {
               <MenuIcon />
             </IconButton>
           ) : (
-            <Box sx={{ display: "flex", gap: 1 }}>
+            <Box sx={{ display: "flex", gap: 2 }}>
               {navigationItems.map((item) => (
                 <Button
                   key={item.label}
@@ -124,11 +123,15 @@ const Navbar: React.FC = () => {
                   sx={{
                     letterSpacing: "1.5px",
                     border: "none",
-                    color: "white",
+                    color: "black",
+                    borderRadius: "18px",
+                    fontWeight: "600",
                     "&:hover": {
-                      color: "#FB9906",
-                      border: "1px solid #FB9906",
-                      borderRadius: "16px",
+                      color: primaryOrange,
+                      scale: "1.1",
+                      letterSpacing: "1.5px",
+                      borderRadius: "18px",
+                      backgroundColor: primaryBackground,
                       transition: "all 0.3s ease-in-out",
                     },
                   }}
@@ -151,9 +154,7 @@ const Navbar: React.FC = () => {
         onClose={handleDrawerToggle}
         ModalProps={{
           keepMounted: true,
-         
         }}
-      
       >
         {drawer}
       </Drawer>

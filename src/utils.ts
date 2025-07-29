@@ -9,6 +9,8 @@ Cristo Redentor – Porto Alegre – RS
 const api = `https://arctronic-com-br-backend.vercel.app`; 
 const endpoint = `email`
 
+export const primaryOrange = "#f8a51b";
+export const primaryBackground = "#1a1a1a";
 export const sendEmail = async (
   name: string,
   email: string,

@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'FUTURAB';
+    src: url('./assets/fonts/FUTURAB.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FUTURABI';
+    src: url('./assets/fonts/FUTURABI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FUTURAK';
+    src: url('./assets/fonts/FUTURAK.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FUTURAL';
+    src: url('./assets/fonts/FUTURAL.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FUTURALI';
+    src: url('./assets/fonts/FUTURALI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FUTURAXK';
+    src: url('./assets/fonts/FUTURAXK.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KABELBN';
+    src: url('./assets/fonts/KABELBN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KABELD';
+    src: url('./assets/fonts/KABELD.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KABELM';
+    src: url('./assets/fonts/KABELM.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KABELN';
+    src: url('./assets//fonts/KABELN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KABELU';
+    src: url('./assets/fonts/KABELU.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT0140M';
+    src: url('./assets/fonts/TT0140M_.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT0141M';
+    src: url('./assets/fonts/TT0141M_.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT0149M';
+    src: url('./assets/fonts/TT0149M_.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT0204M';
+    src: url('./assets/fonts/TT0204M_.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT0205M';
+    src: url('./assets/fonts/TT0205M_.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

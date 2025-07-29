@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
+import { primaryOrange } from "../../utils";
 
 const GrayButton = styled(Button)(({ theme }) => ({
-  backgroundColor: "orange",
+  backgroundColor: primaryOrange,
   color: "black",
   fontFamily: 'Roboto',
   fontWeight: 'bold',
