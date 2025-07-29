@@ -17,6 +17,7 @@ import siliconLabs from "../../assets/brands/Silicon_Labs_2015.svg.png";
 import renesas from "../../assets/brands/renesas.png";
 import stMicroelectroni from "../../assets/brands/st-microelectronics.svg";
 import texasInstruments from "../../assets/brands/Texas-Instruments-Logo.png";
+import { motion } from "framer-motion";
 
 
 const brands = [
@@ -101,89 +102,115 @@ const ServicesSection: React.FC = () => {
         gap: 8,
       }}
     >
-      <Container maxWidth="lg">
-        <Typography
-          fontSize={{ xs: "2rem", md: "2rem" }}
-          component="h2"
-          gutterBottom
-          sx={{ fontWeight: "bold" }}
-        >
-          Nossos serviços
-        </Typography>
-        <Typography  gutterBottom sx={{ mb: 4, fontSize: { xs: "1.2rem", md: "1.5rem" } }}>
-          Algumas das áreas em que já nos destacamos por nossa qualidade,
-          experiência e inovação.
-        </Typography>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeInOut",
+          delayChildren: 0.5,
+          staggerChildren: 0.5,
+        }}
+      >
+        <Container maxWidth="lg">
+          <Typography
+            fontSize={{ xs: "2rem", md: "2rem" }}
+            component="h2"
+            gutterBottom
+            sx={{ fontWeight: "bold" }}
+          >
+            Nossos serviços
+          </Typography>
+          <Typography
+            gutterBottom
+            sx={{ mb: 4, fontSize: { xs: "1.2rem", md: "1.5rem" } }}
+          >
+            Algumas das áreas em que já nos destacamos por nossa qualidade,
+            experiência e inovação.
+          </Typography>
 
-        <Grid container spacing={4}>
-          {cards.map((card, index) => (
-            <Grid size={{ xs: 12, md: 4 }} key={index}>
-              <Box
+          <Grid container spacing={4}>
+            {cards.map((card, index) => (
+              <Grid size={{ xs: 12, md: 4 }} key={index}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    background: "rgba(0, 0, 0, 0.5)",
+                    backdropFilter: "blur(10px)",
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                    padding: 2,
+                  }}
+                >
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    style={{
+                      width: "100%",
+                      marginBottom: "1rem",
+                    }}
+                  />
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    sx={{ fontWeight: "bold" }}
+                  >
+                    {card.title}
+                  </Typography>
+                  {/* <Typography variant="body1">{card.description}</Typography> */}
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeInOut",
+          delayChildren: 0.5,
+          staggerChildren: 0.5,
+        }}
+      >
+        {" "}
+        <Container>
+          <Typography
+            textAlign="center"
+            gutterBottom
+            sx={{ fontWeight: "bold", fontSize: { xs: "1.5rem", md: "2rem" } }}
+          >
+            Desenvolvemos com microcontroladores de diversos fabricantes
+          </Typography>
+
+          <Grid container spacing={4} sx={{ mt: 4 }}>
+            {brands.map((brand, index) => (
+              <Grid
+                size={{ xs: 6, md: 2 }}
+                key={index}
                 sx={{
+                  backgroundColor: "white",
+                  borderRadius: "16px",
+                  padding: 1,
                   display: "flex",
-                  flexDirection: "column",
                   alignItems: "center",
-                  background: "rgba(0, 0, 0, 0.5)",
-                  backdropFilter: "blur(10px)",
-                  border: "1px solid rgba(255, 255, 255, 0.2)",
-                  boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-                  padding: 2,
+                  justifyContent: "center",
                 }}
               >
                 <img
-                  src={card.image}
-                  alt={card.title}
-                  style={{
-                    width: "100%",
-                    marginBottom: "1rem",
-                  }}
+                  src={brand}
+                  alt={brand}
+                  style={{ width: "100%", marginBottom: "1rem" }}
                 />
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  sx={{ fontWeight: "bold" }}
-                >
-                  {card.title}
-                </Typography>
-                {/* <Typography variant="body1">{card.description}</Typography> */}
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-
-      <Container>
-        <Typography
-          textAlign="center"
-          gutterBottom
-          sx={{ fontWeight: "bold", fontSize: { xs: "1.5rem", md: "2rem" } }}
-        >
-          Desenvolvemos com microcontroladores de diversos fabricantes
-        </Typography>
-
-        <Grid container spacing={4} sx={{ mt: 4 }}>
-          {brands.map((brand, index) => (
-            <Grid
-              size={{ xs: 6, md: 2 }}
-              key={index}
-              sx={{
-                backgroundColor: "white",
-                borderRadius: "16px",
-                padding: 1,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img
-                src={brand}
-                alt={brand}
-                style={{ width: "100%", marginBottom: "1rem" }}
-              />
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </motion.div>
     </Box>
   );
 };

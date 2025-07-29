@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import aboutImage from '../../assets/about.jpg';
 import CircleIcon from "@mui/icons-material/Circle";
+import { motion } from 'framer-motion';
 
 
 const services = [
@@ -18,18 +19,27 @@ const services = [
   "Geração de documentação de projeto",
   "Utilização de tecnologia de ponta priorizando a qualidade do produto a custos adequados",
 ];
-const AboutSection: React.FC = () => {
-  return (
-    <Box
-      sx={{
-        py: 8,
-        minHeight: {
-          xs: "1400px",
-          sm: "1200px",
-          md: "900px",
-          lg: "600px",
-        },
-        background: "#181818",
+const AboutSection: React.FC = () => (
+  <Box
+    sx={{
+      py: 8,
+      minHeight: {
+        xs: "1400px",
+        sm: "1200px",
+        md: "900px",
+        lg: "600px",
+      },
+      background: "#181818",
+    }}
+  >
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeInOut",
+        delayChildren: 0.5,
+        staggerChildren: 0.5,
       }}
     >
       <Container maxWidth="lg">
@@ -199,8 +209,8 @@ const AboutSection: React.FC = () => {
           </Box>
         </Box>
       </Container>
-    </Box>
-  );
-};
+    </motion.div>
+  </Box>
+);
 
 export default AboutSection;
