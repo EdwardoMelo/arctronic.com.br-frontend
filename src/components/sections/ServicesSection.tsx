@@ -4,7 +4,7 @@ import alarme from '../../assets/services/alarme.jpg'
 import bluetooth from "../../assets/services/bluetooth.jpg";
 import controle from "../../assets/services/controle.jpg";
 import Ethernet from "../../assets/services/Ethernet.jpg";
-import IoT from "../../assets/services/IoT.jpg";
+import IoT from "../../assets/services/IOT.jpg";
 import telemetria from "../../assets/services/telemetria.jpg";
 import rastreamento from "../../assets/services/restramento.jpg";
 import levantadorVidro from "../../assets/services/levantador_vidro.jpg";
