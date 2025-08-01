@@ -1,4 +1,4 @@
-export const whatsAppLink = `https://api.whatsapp.com/send/?phone=5130244323&text=Olá, vim pelo site!&type=phone_number&app_absent=0`;
+export const whatsAppLink = `https://api.whatsapp.com/send/?phone=+55519128-3606&text=Olá, vim pelo site!&type=phone_number&app_absent=0`;
 
 export const contactNumber = "51 3024 4323";
 export const email = 'contato@arctronic.com.br';
