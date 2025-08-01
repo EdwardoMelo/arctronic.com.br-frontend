@@ -78,16 +78,6 @@ const Footer: React.FC = () => {
 
           {/* Contact Information */}
           <Grid size={{ xs: 12, md: 4 }}>
-            <Typography
-              variant="h6"
-              gutterBottom
-              sx={{ color: "black", fontWeight: "bold" }}
-            >
-              Contato
-            </Typography>
-            <Typography variant="body2" sx={{ my: 1, color: "#1a1a1a" }}>
-              <strong>Telefone:</strong> {contactNumber}
-            </Typography>
             <Typography variant="body2" sx={{ my: 1, color: "#1a1a1a" }}>
               <strong>Email:</strong> {email}
             </Typography>

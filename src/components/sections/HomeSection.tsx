@@ -64,12 +64,25 @@ const HomeSection: React.FC = () => {
                 letterSpacing: "4px",
               }}
               color="white"
-              gutterBottom
             >
-              ARCTRONIC
+              ArcTronic
             </Typography>
             <Typography
-              sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2rem" } }}
+              sx={{
+                fontSize: {
+                  xs: "0.94rem",
+                  sm: "1.6rem",
+                  md: "2rem",
+                  // letterSpacing: {
+                  //   xs: '2px',
+                  //   md: "1.8px",
+                  // },
+                },
+                letterSpacing: {
+                  xs: '2px',
+                  md: "1.8px",
+                }
+              }}
               color="white"
             >
               Soluções em Tecnologia Eletrônica

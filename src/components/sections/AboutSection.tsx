@@ -136,10 +136,10 @@ const AboutSection: React.FC = () => (
                 de projetos eletrônicos microcontrolados, atuando de forma
                 integrada em hardware e software. Também oferece serviços de
                 consultoria em Engenharia Eletrônica. Com uma equipe de
-                engenheiros que somam mais de 30 anos de experiência, a empresa
-                se dedica a entregar soluções sob medida, com foco em atender
-                rigorosamente às especificações técnicas e às expectativas de
-                seus clientes.
+                engenheiros com larga experiência em projetos eletrônicos, a
+                empresa se dedica a entregar soluções sob medida, com foco em
+                atender rigorosamente às especificações técnicas e às
+                expectativas de seus clientes.
               </Typography>
             </Box>
 
@@ -199,7 +199,12 @@ const AboutSection: React.FC = () => (
                     sx={{ display: "flex", alignItems: "center", gap: 1 }}
                   >
                     <CircleIcon sx={{ fontSize: "0.5rem", color: "white" }} />
-                    <Typography variant="body2" fontSize='1rem' color="white" textAlign="left">
+                    <Typography
+                      variant="body2"
+                      fontSize="1rem"
+                      color="white"
+                      textAlign="left"
+                    >
                       {item}
                     </Typography>
                   </Box>

@@ -1,6 +1,6 @@
-export const whatsAppLink = `https://api.whatsapp.com/send/?phone=555191283606&text=Olá, vim pelo site!&type=phone_number&app_absent=0`;
+export const whatsAppLink = `https://api.whatsapp.com/send/?phone=5130244323&text=Olá, vim pelo site!&type=phone_number&app_absent=0`;
 
-export const contactNumber = '+55 51 91283606';
+export const contactNumber = "51 3024 4323";
 export const email = 'contato@arctronic.com.br';
 export const address = `Rua Dom Diogo de Souza, 649
 Cristo Redentor – Porto Alegre – RS

@@ -178,7 +178,7 @@ const ServicesSection: React.FC = () => {
         }}
       >
         {" "}
-        <Container>
+        <Container sx={{display: "flex", flexDirection: "column", alignItems: "center", gap: 4}}>
           <Typography
             textAlign="center"
             gutterBottom
@@ -186,7 +186,6 @@ const ServicesSection: React.FC = () => {
           >
             Desenvolvemos com microcontroladores de diversos fabricantes
           </Typography>
-
           <Grid container spacing={4} sx={{ mt: 4 }}>
             {brands.map((brand, index) => (
               <Grid
@@ -209,6 +208,14 @@ const ServicesSection: React.FC = () => {
               </Grid>
             ))}
           </Grid>
+
+          <Typography
+            textAlign="center"
+            gutterBottom
+            sx={{ fontWeight: "bold", fontSize: { xs: "1.5rem", md: "1rem" } }}
+          >
+            Programação Bare Metal ou com RTOS (Zephyr, FreeRTOS, TI-RTOS)
+          </Typography>
         </Container>
       </motion.div>
     </Box>

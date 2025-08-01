@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import ServicesSection from '../components/sections/ServicesSection';
 
 const Services: React.FC = () => {
